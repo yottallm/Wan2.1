@@ -71,4 +71,25 @@ python generate.py \
 ```
 
 
+---
+
+## Example Output
+```bash
+[2025-06-27 04:02:34,158] INFO: Creating WanT2V pipeline.
+[2025-06-27 04:03:20,511] INFO: loading ./Wan2.1-T2V-1.3B/models_t5_umt5-xxl-enc-bf16.pth
+[2025-06-27 04:03:27,097] INFO: loading ./Wan2.1-T2V-1.3B/Wan2.1_VAE.pth
+[2025-06-27 04:03:27,442] INFO: Creating WanModel from ./Wan2.1-T2V-1.3B
+[2025-06-27 04:03:28,721] INFO: Generating video ...
+100%|████████████████████████████████████████████████████████████████████████| 50/50 [02:58<00:00,  3.57s/it]
+[2025-06-27 04:06:44,223] INFO: Saving generated video to t2v-1.3B_480*832_1_1_Two_anthropomorphic_cats_in_comfy_boxing_gear_and__20250627_040644.mp4
+[2025-06-27 04:06:45,721] INFO: Finished.
+```
+
+---
+## H100 vs RTX 5090 
+
+| Metric           | RTX 5090     | H100         |
+|------------------|--------------|--------------|
+| Inference Time   | ~3m 17s      | ~1m 31s      |
+| Avg Step Time    | ~3.57 s/step | ~1.83 s/step |
 
