@@ -1,6 +1,6 @@
-# 🧠 Wan2.1 T2V (Text-to-Video) - RTX 5090 Setup
+# 🧠 Wan2.1 T2V (Text-to-Video) - RTX 5090 vs H100
 
-This repository outlines the steps to set up and run the [Wan2.1](https://github.com/Wan-Video/Wan2.1) Text-to-Video model, optimized for NVIDIA RTX 5090 using PyTorch 2.7.0 (CUDA 12.8) and a custom FlashAttention wheel.
+This repository outlines the steps to set up and run the [Wan2.1](https://github.com/Wan-Video/Wan2.1) Text-to-Video model.
 
 ---
 
@@ -14,7 +14,7 @@ source venv/bin/activate
 
 ---
 
-## 🔧 Install PyTorch (CUDA 12.8)
+## 🔧 Install PyTorch (CUDA 12.8) on RTX 5090, Skip this for H100
 
 ```bash
 pip install torch==2.7.0+cu128 torchvision torchaudio \
@@ -23,7 +23,7 @@ pip install torch==2.7.0+cu128 torchvision torchaudio \
 
 ---
 
-## ⚡ Install FlashAttention (RTX 5090 Wheel)
+## ⚡ Install FlashAttention on RTX 5090, Skip this for H100
 
 ```bash
 # Download the prebuilt FlashAttention wheel (only for RTX 5090)
